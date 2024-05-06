@@ -1,0 +1,21 @@
+Script started on 2024-03-29 16:44:31-06:00 [TERM="xterm-256color" TTY="/dev/pts/141" COLUMNS="120" LINES="30"]
+
+Disk quotas for user syed.syed1 (uid 24419338): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.125.21:/CSUSERS
+                  1006M  10240M  10240M            5145    100k    100k        
+
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] script script2.txtclear[Krm script2.txtls[Kcd A5script script2.txtclear[K[1Parscript script1.txtclear[Kvim a5b.asm./a5b 06 319[C[C[C6[C[C[C
+[?2004lJune 31st is in summer
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] ./a5b 06 31[K[K[K[K[K01 01
+[?2004lJanuary 1st is in winter
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] ./a5b 01 016 31[1P 314 31
+[?2004lApril 31st is in spring
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] ./a5b 04 31[1P 316 31
+[?2004lJune 31st is in summer
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] ./a5b 06 31[1P 319 31
+[?2004lSeptember 31st is in fall
+]0;syed.syed1@csa2:~/A5[?2004h[UC syed.syed1@csa2 A5] exit
+[?2004lexit
+
+Script done on 2024-03-29 16:45:13-06:00 [COMMAND_EXIT_CODE="0"]

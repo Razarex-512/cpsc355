@@ -1,0 +1,129 @@
+Script started on 2024-02-09 13:01:36-07:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="76" LINES="42"]
+
+Disk quotas for user syed.syed1 (uid 24419338): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.125.21:/CSUSERS
+                  1004M  10240M  10240M            5040    100k    100k        
+
+]0;syed.syed1@csa2:~[?2004h[UC syed.syed1@csa2 ~] vim assign2a.asmgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pvim assign2a.asmm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pvim assign2a.asmgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pvim assign2a.asm[2Psgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pvim assign2a.asmexit[Kquit./a.out gcc assign1b.svim[C[C[C[C[C[C[C[C[C[C[Ca.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.s[4P./bitwisegcc bitwise.s -o bitwise[11Pvim bitwise.s[4P./bitwisegcc bitwise.s -o bitwise[11Pvim bitwise.s[4P./bitwisegcc bitwise.s -o bitwise[11Pvim bitwise.s[4P./bitwisegcc bitwise.s -o bitwise[11Pvim bitwise.s[4P./bitwisegcc bitwise.s -o bitwise[11Pvim bitwise.sgcc bitwise.s -o bitwise[11Pvim bitwise.sgcc bitwise.s -o bitwise[11Pvim bitwise.sgcc bitwise.s -o bitwise[15P./bitwisevim bitwise.sgcc bitwise.s -o bitwise[15P./bitwisevim bitwise.sgcc bitwise.s -o bitwise[15P./bitwisevim bitwise.sgcc bitwise.s -o bitwise[15P./bitwisevim bitwise.sgcc bitwise.s -o bitwise[15P./bitwisevim bitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[2Pbitwise.ssecondbit.s[1Passign1a.sb.sgcc[C[C[C[C[C[C[C[C[C[C[C[6P./a.out [4Pquitexitvim assign2a.asmm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pvim assign2a.sasmm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pvim assign2a.asmm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pvim assign2a.asmm4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc assign2a.s -o assign2a -g3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pvim assign2a.asm[Kgdb assign2a
+[?2004l[35;1mGNU gdb (GDB) Fedora Linux 13.2-6.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign2a[m...
+[?2004h(gdb) b main 
+[?2004lBreakpoint 1 at [34m0x410228[m: file [32massign2a.s[m, line 25.
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/csusers/syed.syed1/assign2a[m 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for [32msystem-supplied DSO at 0xfffff7ffb000[m
+[###                                                                     ]                                                                                                                                                        [Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [33mmain[m () at [32massign2a.s[m:25
+25	        stp     x[35m29[m[31m,[m x[35m30[m[31m,[m [31m[[m[32msp[m[31m,[m [31m-[m[35m16[m[31m]![m
+[?2004h[?2004l[?2004h(gdb) display $w20
+[?2004l1: $w20 = 1
+[?2004h(gdb) display $w22
+[?2004l2: $w22 = 4260020
+[?2004h(gdb) $[Kdisplay $x24
+[?2004l3: $x24 = 281474842483528
+[?2004h(gdb) ni
+[?2004l26	        [01;34mmov[m     x[35m29[m[31m,[m [32msp[m
+1: $w20 = 1
+2: $w22 = 4260020
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l28	        [01;34mmov[m     w[35m20[m[31m,[m [31m-[m[35m16843010[m [31m//[minitialize multiplicand
+1: $w20 = 1
+2: $w22 = 4260020
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l29	        [01;34mmov[m     w[35m19[m[31m,[m [35m70[m [31m//[minitialize multiplier
+1: $w20 = 4278124286
+2: $w22 = 4260020
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l30	        [01;34mmov[m     w[35m21[m[31m,[m [35m0[m [31m//[mset prod to [35m0[m
+1: $w20 = 4278124286
+2: $w22 = 4260020
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l31	        [01;34mmov[m     w[35m22[m[31m,[m [35m0[m [31m//[minitialize [01;34mloop[m counter
+1: $w20 = 4278124286
+2: $w22 = 4260020
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l34	        adrp    x[35m0[m[31m,[m init_msg
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l35	        [01;34madd[m     x[35m0[m[31m,[m x[35m0[m[31m,[m [31m:[mlo[35m12[m[31m:[minit_msg
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l36	        [01;34mmov[m     w[35m1[m[31m,[m w[35m19[m
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l37	        [01;34mmov[m     w[35m2[m[31m,[m w[35m19[m
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l38	        [01;34mmov[m     w[35m3[m[31m,[m w[35m20[m
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l39	        [01;34mmov[m     w[35m4[m[31m,[m w[35m20[m
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l40	        [32mbl[m      printf
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lmultiplier = 0x00000046 (70) multiplicand = 0xfefefefe (-16843010) 
+
+42	        [01;34mcmp[m     w[35m19[m[31m,[m [35m0[m [31m//[mcheck if value is [01;34mneg[m [01;34mor[m pos
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l43	        b[31m.[m[01;34mge[m    start
+1: $w20 = 4278124286
+2: $w22 = 0
+3: $x24 = 281474842483528
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lproduct = 0xffffffff  multiplier = 0xb9b9b974
+64-bit result = 0xffffffffb9b9b974 (-1179010700)
+[Inferior 1 (process 872581) exited normally]
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;syed.syed1@csa2:~[?2004h[UC syed.syed1@csa2 ~] exit
+[?2004lexit
+
+Script done on 2024-02-09 13:07:02-07:00 [COMMAND_EXIT_CODE="0"]

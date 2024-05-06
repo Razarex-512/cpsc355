@@ -1,0 +1,120 @@
+Script started on 2024-03-15 03:05:39-06:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="156" LINES="44"]
+
+Disk quotas for user syed.syed1 (uid 24419338): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.125.21:/CSUSERS
+                  1005M  10240M  10240M            5073    100k    100k        
+
+]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] gdb assign4
+[?2004l[35;1mGNU gdb (GDB) Fedora Linux 13.2-6.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign4[m...
+[?2004h(gdb) b 221
+[?2004lBreakpoint 1 at [34m0x4103d4[m: file [32massign4.s[m, line 221.
+[?2004h(gdb) b 226
+[?2004lBreakpoint 2 at [34m0x4103e0[m: file [32massign4.s[m, line 226.
+[?2004h(gdb) b 231
+[?2004lBreakpoint 3 at [34m0x4103ec[m: file [32massign4.s[m, line 231.
+[?2004h(gdb) b 255
+[?2004lBreakpoint 4 at [34m0x410428[m: file [32massign4.s[m, line 255.
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/csusers/syed.syed1/assign4[m 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+                                                                                                                                                                                                                                                                                                                        [Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [33mmain[m () at [32massign4.s[m:221
+221	[31m        bl printf                                    // Call printf to print initial state message[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lInitial cuboid values:
+224	[31m        add x0, x29, cubOneOffset                    // Calculate address of the first cuboid'[ms storage
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l225	        ldr w[35m1[m[31m,[m [31m=[mlabelOne                            [31m//[m Load the [01;34mlabel[m [31m"first"[m for the first cuboid
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l
+Breakpoint 2, [33mmain[m () at [32massign4.s[m:226
+226	        [32mbl[m displayCuboid                             [31m//[m [01;34mCall[m displayCuboid to print the first cuboid[31m's details[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lfirst Cuboid's Origin = (0, 0) Base width = 2 Base length = 2 Height = 3 Volume = 12
+229	[31m        add x0, x29, cubTwoOffset                    // Calculate address of the second cuboid'[ms storage
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l230	        ldr w[35m1[m[31m,[m [31m=[mlabelTwo                            [31m//[m Load the [01;34mlabel[m [31m"second"[m for the second cuboid
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l
+Breakpoint 3, [33mmain[m () at [32massign4.s[m:231
+231	        [32mbl[m displayCuboid                             [31m//[m [01;34mCall[m displayCuboid to print the second cuboid[31m's details[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lsecond Cuboid's Origin = (0, 0) Base width = 2 Base length = 2 Height = 3 Volume = 12
+234	[31m        add x0, x29, cubOneOffset                    // Calculate address of the first cuboid'[ms storage
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l235	        [01;34madd[m x[35m1[m[31m,[m x[35m29[m[31m,[m cubTwoOffset                    [31m//[m Calculate address of the second cuboid[31m's storage[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l236	[31m        bl sizeMatch                                 // Call sizeMatch to compare dimensions of both cuboids[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l237	[31m        cmp w0, 1                                 // Compare the result of sizeMatch with 1[m
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Breakpoint 4, [33malternatePath[m () at [32massign4.s[m:255
+255	[31m        bl printf                                    // Call printf to print updated state message[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l
+Changed cuboid values:
+258	[31m        add x0, x29, cubOneOffset                    // Calculate address of the first cuboid'[ms storage
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l259	        ldr w[35m1[m[31m,[m [31m=[mlabelOne                            [31m//[m Load the [01;34mlabel[m [31m"first"[m for the first cuboid
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l260	        [32mbl[m displayCuboid                             [31m//[m [01;34mCall[m displayCuboid to print updated details of the first cuboid
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lfirst Cuboid's Origin = (3, -6) Base width = 2 Base length = 2 Height = 3 Volume = 12
+263	        [01;34madd[m x[35m0[m[31m,[m x[35m29[m[31m,[m cubTwoOffset                    [31m//[m Calculate address of the second cuboid[31m's storage[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l264	[31m        ldr w1, =labelTwo                            // Load the label "second" for the second cuboid[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l265	[31m        bl displayCuboid                             // Call displayCuboid to print updated details of the second cuboid[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lsecond Cuboid's Origin = (0, 0) Base width = 8 Base length = 8 Height = 12 Volume = 768
+267	[31m        mov w0, 0                                    // Set return value of main to 0 (success)[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l268	[31m        ldp x29, x30, [sp], spaceFree                // Restore frame pointer, link register and deallocate stack space for main[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[33malternatePath[m () at [32massign4.s[m:269
+269	[31m        ret                                          // Return from main[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[33m__libc_start_call_main[m ([36mmain[m=0x800000000, [36mmain@entry[m=0x4100b4 <_start+52>, [36margc[m=12, [36margc@entry[m=1, [36margv[m=0xffff00000300, [36margv@entry[m=0xfffffffff194)
+    at [32m../sysdeps/nptl/libc_start_call_main.h[m:74
+Downloading source file [32m/usr/src/debug/glibc-2.37-18.fc38.aarch64/csu/../sysdeps/nptl/libc_start_call_main.h[m
+[###                                                                                                                                                     ][##########################################################################################################################################] 100% (1.29 K)                                                                                                                                                            74	  [01mexit[m [31m([mresult[31m);[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[Inferior 1 (process 2471513) exited normally]
+[?2004h[?2004l[?2004h(gdb) exit
+[?2004l]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] quit
+[?2004lbash: quit: command not found
+]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] stop
+[?2004lbash: stop: command not found
+]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] [K[UC syed.syed1@csa1 ~] [K[UC syed.syed1@csa1 ~] oops :)
+[?2004lbash: syntax error near unexpected token `)'
+]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] exi[K[K[Kbyee :)
+[?2004lbash: syntax error near unexpected token `)'
+]0;syed.syed1@csa1:~[?2004h[UC syed.syed1@csa1 ~] exit
+[?2004lexit
+
+Script done on 2024-03-15 03:07:47-06:00 [COMMAND_EXIT_CODE="2"]
